@@ -68,3 +68,5 @@ This is a project in GoogleCode, if you are interested in the old code, you can 
 In the first edtion of this project, I use pp to control processes. In this lastest version, pp is not used anymore. Standard library is quite enough for this project.
 
 I am trying to prettify the output by adding Pid in front of the output, but I cannot work it out. If anyone can improve this, I will be very appreciated. 
+
+Another main drawback of this project is that the job list cannot be modified after the list is submitted. Since this project is not meant to be a fullsize task balance system, this feature may not be coded in near future. If anyone interested improve this, I will be very appreciated, too.
