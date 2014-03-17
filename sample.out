@@ -1,0 +1,216 @@
+Output of "batchrun.py -vvvv -n 4 testjobs >sample.out"
+Jobs 0 : sleep  0
+Jobs 1 : sleep  3
+Jobs 2 : sleep  1
+Jobs 3 : sleep  5
+Jobs 4 : sleep  4
+Jobs 5 : sleep  8
+Jobs 6 : sleep  2
+Jobs 7 : sleep  3
+Jobs 8 : sleep  2
+Jobs 9 : sleep  1
+Jobs 10 : sleep  3
+Jobs 11 : sleep  3
+Jobs 12 : sleep  0
+Jobs 13 : sleep  6
+Jobs 14 : sleep  7
+Jobs 15 : sleep  6
+Jobs 16 : sleep  5
+Jobs 17 : sleep  3
+Jobs 18 : sleep  3
+Jobs 19 : sleep  5
+Jobs 20 : sleep  1
+Jobs 21 : sleep  9
+Jobs 22 : sleep  7
+Jobs 23 : sleep  9
+Jobs 24 : sleep  3
+Jobs 25 : sleep  1
+Jobs 26 : sleep  7
+Jobs 27 : sleep  0
+Jobs 28 : sleep  2
+Jobs 29 : sleep  8
+Jobs 30 : sleep  0
+Jobs 31 : sleep  2
+Jobs 32 : sleep  4
+Jobs 33 : sleep  4
+Jobs 34 : sleep  4
+Jobs 35 : sleep  3
+Jobs 36 : sleep  4
+Jobs 37 : sleep  4
+Jobs 38 : sleep  0
+Jobs 39 : sleep  4
+Jobs 40 : sleep  0
+Jobs 41 : sleep  6
+Jobs 42 : sleep  2
+Jobs 43 : sleep  8
+Jobs 44 : sleep  7
+Jobs 45 : sleep  7
+Jobs 46 : sleep  0
+Jobs 47 : sleep  5
+Jobs 48 : sleep  0
+Jobs 49 : sleep  9
+Jobs 50 : sleep  9
+Jobs 51 : sleep  8
+Jobs 52 : sleep  9
+Jobs 53 : sleep  5
+Jobs 54 : sleep  9
+Jobs 55 : sleep  5
+Jobs 56 : sleep  7
+Jobs 57 : sleep  8
+Jobs 58 : sleep  0
+Jobs 59 : sleep  2
+Jobs 60 : sleep  5
+Jobs 61 : sleep  6
+Jobs 62 : sleep  4
+Jobs 63 : sleep  6
+Jobs 64 : sleep  2
+Jobs 65 : sleep  5
+Jobs 66 : sleep  8
+Jobs 67 : sleep  9
+Jobs 68 : sleep  3
+Jobs 69 : sleep  3
+Jobs 70 : sleep  2
+Jobs 71 : sleep  8
+Jobs 72 : sleep  9
+Jobs 73 : sleep  2
+Jobs 74 : sleep  2
+Jobs 75 : sleep  5
+Jobs 76 : sleep  0
+Jobs 77 : sleep  7
+Jobs 78 : sleep  5
+Jobs 79 : sleep  4
+Jobs 80 : sleep  3
+Jobs 81 : sleep  3
+Jobs 82 : sleep  6
+Jobs 83 : sleep  9
+Jobs 84 : sleep  6
+Jobs 85 : sleep  3
+Jobs 86 : sleep  2
+Jobs 87 : sleep  4
+Jobs 88 : sleep  7
+Jobs 89 : sleep  0
+Jobs 90 : sleep  8
+Jobs 91 : sleep  6
+Jobs 92 : sleep  5
+Jobs 93 : sleep  1
+Jobs 94 : sleep  7
+Jobs 95 : sleep  7
+Jobs 96 : sleep  4
+Jobs 97 : sleep  5
+Jobs 98 : sleep  9
+Jobs 99 : sleep  2 
+Do you want to execute the jobs?(y/N) y
+Executing job 0 , Pid is 9544
+:: New Job info :: 
+ Command: sleep  0
+ 	 Start time: 3.20708e-07
+ Job pid: 9544	Job count: 0
+Executing job 1 , Pid is 10760
+:: New Job info :: 
+ Command: sleep  3
+ 	 Start time: 0.00558224
+ Job pid: 10760	Job count: 1
+Executing job 2 , Pid is 10400
+:: New Job info :: 
+ Command: sleep  1
+ 	 Start time: 0.0119829
+ Job pid: 10400	Job count: 2
+Executing job 3 , Pid is 12456
+:: New Job info :: 
+ Command: sleep  5
+ 	 Start time: 0.0190106
+ Job pid: 12456	Job count: 3
+Job 0 Finished! Total time 0.324299 Sec.
+:: Finished Job info :: 
+ Command: sleep  0
+ 	 Total time: 0.324317
+ Job pid: 9544	Job count: 0
+Executing job 4 , Pid is 10432
+:: New Job info :: 
+ Command: sleep  4
+ 	 Start time: 0.431922
+ Job pid: 10432	Job count: 4
+Job 2 Finished! Total time 1.31932 Sec.
+:: Finished Job info :: 
+ Command: sleep  1
+ 	 Total time: 1.31934
+ Job pid: 10400	Job count: 2
+Executing job 5 , Pid is 9168
+:: New Job info :: 
+ Command: sleep  8
+ 	 Start time: 1.43846
+ Job pid: 9168	Job count: 5
+Job 1 Finished! Total time 3.33273 Sec.
+:: Finished Job info :: 
+ Command: sleep  3
+ 	 Total time: 3.33275
+ Job pid: 10760	Job count: 1
+Executing job 6 , Pid is 12412
+:: New Job info :: 
+ Command: sleep  2
+ 	 Start time: 3.44538
+ Job pid: 12412	Job count: 6
+Job 4 Finished! Total time 4.31331 Sec.
+:: Finished Job info :: 
+ Command: sleep  4
+ 	 Total time: 4.31335
+ Job pid: 10432	Job count: 4
+Executing job 7 , Pid is 9520
+:: New Job info :: 
+ Command: sleep  3
+ 	 Start time: 4.85116
+ Job pid: 9520	Job count: 7
+Job 3 Finished! Total time 5.33229 Sec.
+:: Finished Job info :: 
+ Command: sleep  5
+ 	 Total time: 5.33231
+ Job pid: 12456	Job count: 3
+Executing job 8 , Pid is 7308
+:: New Job info :: 
+ Command: sleep  2
+ 	 Start time: 5.45721
+ Job pid: 7308	Job count: 8
+Job 6 Finished! Total time 2.31194 Sec.
+:: Finished Job info :: 
+ Command: sleep  2
+ 	 Total time: 2.31196
+ Job pid: 12412	Job count: 6
+Executing job 9 , Pid is 12884
+:: New Job info :: 
+ Command: sleep  1
+ 	 Start time: 5.86316
+ Job pid: 12884	Job count: 9
+Job 9 Finished! Total time 1.30009 Sec.
+:: Finished Job info :: 
+ Command: sleep  1
+ 	 Total time: 1.30011
+ Job pid: 12884	Job count: 9
+Executing job 10 , Pid is 6860
+:: New Job info :: 
+ Command: sleep  3
+ 	 Start time: 7.26987
+ Job pid: 6860	Job count: 10
+Job 8 Finished! Total time 2.31204 Sec.
+:: Finished Job info :: 
+ Command: sleep  2
+ 	 Total time: 2.31206
+ Job pid: 7308	Job count: 8
+Executing job 11 , Pid is 9192
+:: New Job info :: 
+ Command: sleep  3
+ 	 Start time: 7.87629
+ Job pid: 9192	Job count: 11
+Job 7 Finished! Total time 3.32512 Sec.
+:: Finished Job info :: 
+ Command: sleep  3
+ 	 Total time: 3.32514
+ Job pid: 9520	Job count: 7
+Executing job 12 , Pid is 4756
+:: New Job info :: 
+ Command: sleep  0
+ 	 Start time: 8.28245
+ Job pid: 4756	Job count: 12
+
+Note: User Abort Determined!
+13 jobs has been submitted. Rest jobs will be abandoned.
+Submited job will not be affected. Kill the process if you will.
