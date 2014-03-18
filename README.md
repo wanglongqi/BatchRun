@@ -1,4 +1,4 @@
-![](logo.png) BatchRun
+![](https://github.com/wanglongqi/BatchRun/raw/master/logo.png) BatchRun
 ========
 
 Full use of your multi-core CPU by BatchRun.
