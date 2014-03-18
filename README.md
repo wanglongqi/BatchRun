@@ -14,7 +14,7 @@ Full use of your multi-core CPU by BatchRun.
         -v                    verbosity, dupulicate v to get more details.
         InputFile(s)          If no file(s) is presented, input is readed from stdin.
 
-Output from "batchrun.py -vvvv -n 4 testjobs >sample.out" is shown in [sample.out](sample.out)
+Output from "batchrun.py -vvvv -n 4 testjobs >sample.out" is shown in [sample.out](https://github.com/wanglongqi/BatchRun/raw/master/sample.out)
 
 First, all jobs will be listed. 
 
