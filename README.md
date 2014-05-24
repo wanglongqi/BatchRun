@@ -11,8 +11,8 @@ Full use of your multi-core CPU by BatchRun.
         --version             show program's version number and exit
         -h, --help            show this help message and exit
         -n NCPU, --ncpu=NCPU  ncpu, use how many cpus for current job.
-        -v                    verbosity, dupulicate v to get more details.
-        InputFile(s)          If no file(s) is presented, input is readed from stdin.
+        -v                    verbosity, duplicate v to get more details.
+        InputFile(s)          If no file(s) is presented, input is read from stdin.
 
 Output from "batchrun.py -vvvv -n 4 testjobs >sample.out" is shown in [sample.out](https://github.com/wanglongqi/BatchRun/raw/master/sample.out)
 
@@ -24,11 +24,11 @@ First, all jobs will be listed.
     Jobs 3 : sleep  5
     Jobs 4 : sleep  4
 
-Second, a comfirm message will be printed.
+Second, a confirm message will be printed.
 
     Do you want to execute the jobs?(y/N) 
 
-Third, jobs will be excuted. Status will be print to stdout.
+Third, jobs will be executed. Status will be print to stdout.
 
     Executing job 0 , Pid is 9544
     :: New Job info :: 
@@ -58,14 +58,14 @@ If Ctrl + C is pressed in the middle, following message will be printed.
 
     Note: User Abort Determined!
     13 jobs has been submitted. Rest jobs will be abandoned.
-    Submited job will not be affected. Kill the process if you will.
+    Submitted job will not be affected. Kill the process if you will.
 
 
 ## History of BatchRun
 
 This is a project in GoogleCode, if you are interested in the old code, you can find it [here](https://code.google.com/p/batchrun/).
 
-In the first edtion of this project, I use pp to control processes. In this lastest version, pp is not used anymore. Standard library is quite enough for this project.
+In the first edition of this project, I use pp to control processes. In this latest version, pp is not used anymore. Standard library is quite enough for this project.
 
 I am trying to prettify the output by adding Pid in front of the output, but I cannot work it out. If anyone can improve this, I will be very appreciated. 
 
