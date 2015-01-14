@@ -8,7 +8,7 @@ import sys
 import optparse
 import time
 
-parser = optparse.OptionParser(version="%prog 0.2")
+parser = optparse.OptionParser(version="%prog 0.3")
 
 parser.add_option('-n', '--ncpu',
         dest='ncpu',
