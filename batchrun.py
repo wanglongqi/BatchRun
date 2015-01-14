@@ -17,7 +17,7 @@ parser.add_option('-n', '--ncpu',
         )
 parser.add_option("-v",
         action="count", 
-        help='verbosity, dupulicate v to get more details.',
+        help='verbosity, duplicate v to get more details.',
         dest="verbosity"
         )
 options, others = parser.parse_args()
@@ -88,7 +88,7 @@ while True:
     except KeyboardInterrupt:
         print '\nNote: User Abort Determined!'
         print jcount,'jobs has been submitted. Rest jobs will be abandoned.'
-        print 'Submited job will not be affected. Kill the process if you will.'
+        print 'Submitted job will not be affected. Kill the process if you will.'
         break
     except Exception,msg:
         print msg
