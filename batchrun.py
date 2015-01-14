@@ -15,6 +15,16 @@ parser.add_option('-n', '--ncpu',
         help='ncpu, use how many cpus for current job.',
         type='int'
         )
+parser.add_option('-p', '--prefix',
+        dest='prefix',
+        help='prefix, add prefix to command.',
+        type='string'
+        )
+parser.add_option('-s', '--suffix',
+        dest='suffix',
+        help='suffix, add suffix to command.',
+        type='string'
+        )
 parser.add_option("-v",
         action="count", 
         help='verbosity, duplicate v to get more details.',
@@ -29,6 +39,16 @@ if options.ncpu ==None:
     import multiprocessing
     options.ncpu=multiprocessing.cpu_count()
 
+if options.suffix == None:
+    options.suffix = ' '
+else:
+    options.suffix = ' '+options.suffix.strip()
+
+if options.prefix == None:
+    options.prefix = ' '
+else:
+    options.prefix = options.prefix.strip()+' '
+
 for file in others:
     if file==None:
         fid=sys.stdin
@@ -40,7 +60,7 @@ for file in others:
         if options.verbosity>0:
             print 'Jobs',jcount,':',line,
             jcount+=1            
-        jobs.append(line)
+        jobs.append(options.prefix+line.strip()+options.suffix)
 
 if options.verbosity>2 and jcount>0:
     print '\nDo you want to execute the jobs?(y/N)'
