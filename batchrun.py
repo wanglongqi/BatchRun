@@ -15,6 +15,16 @@ parser.add_option('-n', '--ncpu',
         help='ncpu, use how many cpus for current job.',
         type='int'
         )
+parser.add_option('-p', '--prefix',
+        dest='prefix',
+        help='prefix, add prefix to command.',
+        type='str'
+        )
+parser.add_option('-s', '--suffix',
+        dest='suffix',
+        help='suffix, add suffix to command.',
+        type='str'
+        )
 parser.add_option("-v",
         action="count", 
         help='verbosity, duplicate v to get more details.',
@@ -28,6 +38,8 @@ import subprocess
 if options.ncpu ==None:
     import multiprocessing
     options.ncpu=multiprocessing.cpu_count()
+
+#if options.suffix == None:
 
 for file in others:
     if file==None:
