@@ -8,7 +8,7 @@ import sys
 import optparse
 import time
 
-parser = optparse.OptionParser(version="%prog 0.3")
+parser = optparse.OptionParser(version="%prog 0.4")
 
 parser.add_option('-n', '--ncpu',
         dest='ncpu',
@@ -25,6 +25,11 @@ parser.add_option('-s', '--suffix',
         help='suffix, add suffix to command.',
         type='string'
         )
+parser.add_option('-q','--quote',
+    dest='quote',
+    action='store_true',
+    help='quote, quote the input line with "'
+    )
 parser.add_option("-v",
         action="count", 
         help='verbosity, duplicate v to get more details.',
@@ -59,8 +64,11 @@ for file in others:
     for line in fid:
         if options.verbosity>0:
             print 'Jobs',jcount,':',line,
-            jcount+=1            
-        jobs.append(options.prefix+line.strip()+options.suffix)
+            jcount+=1  
+        if options.quote:
+            jobs.append(options.prefix+'"'+line.strip()+'"'+options.suffix)
+        else:
+            jobs.append(options.prefix+line.strip()+options.suffix)
 
 if options.verbosity>2 and jcount>0:
     print '\nDo you want to execute the jobs?(y/N)'
