@@ -1,0 +1,1 @@
+@python batchrun.py -vv %*
