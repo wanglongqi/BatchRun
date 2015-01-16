@@ -8,7 +8,7 @@ import sys
 import optparse
 import time
 
-parser = optparse.OptionParser(version="%prog 0.4")
+parser = optparse.OptionParser(version="%prog 0.5")
 
 parser.add_option('-n', '--ncpu',
         dest='ncpu',
@@ -102,9 +102,9 @@ while True:
                 if p!=0:
                     print rinfo[i][1],'exit abnormal. Exit code',p
                 if options.verbosity>1:
-                    print 'Job %d Finished! Total time %g Sec.'%(rinfo[i][3],time.clock()-rinfo[i][1])
+                    print 'Job %d/%d Finished! Total time %g Sec.'%(rinfo[i][3],len(jobs),time.clock()-rinfo[i][1])
                 if options.verbosity>3:
-                    print ':: Finished Job info :: \n Command: %s \t Total time: %g\n Job pid: %d\tJob count: %d'%(rinfo[i][0],time.clock()-rinfo[i][1],rinfo[i][2],rinfo[i][3])
+                    print ':: Finished Job info :: \n Command: %s \t Total time: %g\n Job pid: %d\tJob count: %d\n Finished Percent: %.2f%%'%(rinfo[i][0],time.clock()-rinfo[i][1],rinfo[i][2],rinfo[i][3],100.*rinfo[i][3]/len(jobs))
                 rjob.pop(i)
                 rinfo.pop(i)
                 
