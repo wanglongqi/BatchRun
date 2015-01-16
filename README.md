@@ -70,3 +70,10 @@ In the first edition of this project, I use pp to control processes. In this lat
 I am trying to prettify the output by adding Pid in front of the output, but I cannot work it out. If anyone can improve this, I will be very appreciated. 
 
 Another main drawback of this project is that the job list cannot be modified after the list is submitted. Since this project is not meant to be a fullsize task balance system, this feature may not be coded in near future. If anyone interested improve this, I will be very appreciated, too.
+
+## Possible todos
+Here is some possible extensions which may be considered in future updates.
+
+- add supports for return codes of processes.
+- tested on Mac OSX.
+- add test codes.
