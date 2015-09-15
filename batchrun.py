@@ -8,7 +8,7 @@ import sys
 import optparse
 import time
 
-parser = optparse.OptionParser(version="%prog 0.5")
+parser = optparse.OptionParser(version="%prog 0.6")
 
 parser.add_option('-n', '--ncpu',
         dest='ncpu',
@@ -71,6 +71,12 @@ for file in others:
             jobs.append(options.prefix+line.strip()+options.suffix)
 
 if options.verbosity>2 and jcount>0:
+    print '\n----------------------------------------------'
+    print 'Options summarize:'
+    print '\t Threads:',options.ncpu,'Verbosity:',options.verbosity
+    print '\t Prefix:',options.prefix,'Suffix:',options.suffix
+    print '\t Add quotation:',options.quote
+    print '----------------------------------------------'
     print '\nDo you want to execute the jobs?(y/N)'
     if raw_input()=='N':
         sys.exit()
@@ -116,7 +122,7 @@ while True:
     except KeyboardInterrupt:
         print '\nNote: User Abort Determined!'
         print jcount,'jobs has been submitted. Rest jobs will be abandoned.'
-        print 'Submitted job will not be affected. Kill the process if you will.'
+        print 'Submitted job will not be affected. Kill the processes if you want.'
         break
     except Exception,msg:
         print msg
